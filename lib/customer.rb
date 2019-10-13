@@ -28,9 +28,9 @@ class Customer
     def new_meal_20_percent(waiter, total)
         tip = total * 0.2
         Meal.new(waiter, self, total, tip)
-      end
+    end
      
-      def self.oldest_customer
+    def self.oldest_customer
         oldest_age = 0
         oldest_customer = nil
         self.all.each do |customer|
